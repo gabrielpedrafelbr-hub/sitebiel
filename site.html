@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Pedras de Fel</title>
+    <link rel="icon" type="image/png" href="favicon.jpg">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('fundo.gif') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        header img {
+            height: 30px;
+        }
+        h1 {
+            margin: 0;
+        }
+        h2 {
+            color: yellow;
+        }
+        .highlight {
+            color: yellow;
+            font-weight: bold;
+        }
+        section {
+            background: rgba(0, 0, 0, 0.6);
+            margin: 20px auto;
+            padding: 15px;
+            max-width: 500px;
+            border-radius: 15px;
+        }
+        .section-img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        .whatsapp-btn {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+        .whatsapp-btn img {
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        .whatsapp-btn:hover {
+            transform: scale(1.05);
+            background-color: #1ebe57;
+        }
+        /* Botão flutuante no canto inferior direito */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: transform 0.2s ease;
+            z-index: 1000;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+        .whatsapp-float img {
+            width: 35px;
+            height: 35px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="favicon.jpg" alt="Logo">
+        <h1>Gabriel Pedras de Fel</h1>
+    </header>
+
+    <h2>Compramos Pedra de Fel</h2>
+
+    <section>
+        <p>Somos especialistas na compra de <span class="highlight">pedras de fel bovino</span>. Trabalhamos com segurança, sigilo e pagamentos imediatos via Pix para qualquer lugar do Brasil.</p>
+        <img src="sobre.png" alt="Sobre Nós" class="section-img">
+    </section>
+
+    <section>
+        <h2>Como Funciona</h2>
+        <p>Você entra em contato pelo WhatsApp, enviamos as instruções, realizamos a avaliação e efetuamos o pagamento na hora.</p>
+        <img src="como.png" alt="Como Funciona" class="section-img">
+    </section>
+
+    <!-- Botão dentro do conteúdo -->
+    <a href="https://wa.me/5517991963052" class="whatsapp-btn" target="_blank">
+        <img src="WhatsApp.svg.png" alt="WhatsApp"> Fale Conosco
+    </a>
+
+    <!-- Botão flutuante -->
+    <a href="https://wa.me/5517991963052" class="whatsapp-float" target="_blank">
+        <img src="WhatsApp.svg.png" alt="WhatsApp">
+    </a>
+
+</body>
+</html>
